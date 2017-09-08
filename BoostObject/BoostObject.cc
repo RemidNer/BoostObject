@@ -102,6 +102,7 @@ TypeS BoostObject::SwitchCase(const std::string& str, int type)
 	return NULL;
 }
 
+
 BoostObject::~BoostObject()
 {
 	cout << "Destructor..." << endl;

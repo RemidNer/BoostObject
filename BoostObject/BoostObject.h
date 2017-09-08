@@ -55,9 +55,6 @@ public:
 	/************************************************************************/
 	TypeS SwitchCase(const std::string& str, int type);
 
-
-
-
 	~BoostObject();
 private:
 	std::string ptr;

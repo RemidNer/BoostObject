@@ -5,16 +5,19 @@ int main(int argc, char *argv[])
 {
 	string ps("  A Test Object For Boost Library  ");
 	string pi("1234");
-	BoostObject bj;
+	
+	shared_ptr<BoostObject> bj = make_shared<BoostObject>(ps);
 
-	int result = 0;
-	bj.TypeCast(pi,0,result);
-	cout << "Int Result: " << result << endl;
+	string ptr = bj->OutputFormat(ps);
+	cout << "OutputFormat result: " << ptr << endl;
 
-	string ptr = bj.OutputFormat(ps);
-	cout << "OutputFormat: " << ptr << endl;
+	int result = 0;;
+	bj->TypeCast(pi, 0, result);
+	cout << "TypeCast result is: " << result << endl;
 
-	cout << "Case Conversion: " << bj.SwitchCase(ps, 1) << endl;
+	string str = bj->SwitchCase(ps, 0);
+	cout << "Switch case result: " << str << endl;
+
 
 	system("pause");
 }
