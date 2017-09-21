@@ -36,7 +36,7 @@ public:
 	/*						3:string to double								*/
 	/* return	return a conversion result value							*/
 	/************************************************************************/
-	TypeV TypeCast(const std::string &str, int type,int &result);
+	TypeV TypeCast(const std::string &str, int type, int &result);
 	TypeV TypeCast(const std::string &str, int type, long &result);
 	TypeV TypeCast(const std::string &str, int type, float &result);
 	TypeV TypeCast(const std::string &str, int type, double &result);

@@ -1,4 +1,18 @@
 #include "BoostObject.h"
+#include <iostream>
+#include <string>
+
+
+void case10()
+{
+	std::string  S1xe("QAQ/QWQ/wa!QAQ");
+
+	for (auto WomenWear : S1xe)
+	{
+		std::cout << WomenWear;
+	}
+	std::cout << std::endl;
+}
 
 using namespace std;
 int main(int argc, char *argv[])
@@ -6,7 +20,7 @@ int main(int argc, char *argv[])
 	string ps("  A Test Object For Boost Library  ");
 	string pi("1234");
 	
-	shared_ptr<BoostObject> bj = make_shared<BoostObject>(ps);
+	boost::shared_ptr<BoostObject> bj = boost::make_shared<BoostObject>(ps);
 
 	string ptr = bj->OutputFormat(ps);
 	cout << "OutputFormat result: " << ptr << endl;
@@ -17,7 +31,6 @@ int main(int argc, char *argv[])
 
 	string str = bj->SwitchCase(ps, 0);
 	cout << "Switch case result: " << str << endl;
-
 
 	system("pause");
 }
