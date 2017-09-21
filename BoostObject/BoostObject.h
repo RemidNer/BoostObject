@@ -18,7 +18,7 @@ typedef double		TypeD;
 typedef long		TypeL;
 typedef void		TypeV;
 typedef float		TypeF;
-typedef int			TypeI;
+typedef int		TypeI;
 typedef std::string TypeS;
 
 class BoostObject
